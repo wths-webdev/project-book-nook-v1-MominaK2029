@@ -12,13 +12,11 @@ print("To quit (quit)")
 # ask user for what they wanna do (While Loop)
 user_input = input("What would you like to do?")
 while True:
-    input("What would you like to do?")
 
     # Add
         # ask for book 
-    if user_input == ("add"):
+    if user_input == "add":
         book_name = input("Which book would you like to add?")
-        input("Which book would you like to add?")
         # add to list 
         My_Books.append(book_name)
         # success message
@@ -26,10 +24,11 @@ while True:
 
     # Show 
         # print out list with numbers
-    elif user_input == ("show"):
+    elif user_input == "show":
         print (My_Books)
     # Remove 
         # ask for book
+        book_name2 = input("Which book would you like to add?")
         # remove the book
         My_Books.remove()
         # success message
@@ -39,5 +38,6 @@ while True:
         # print out the message with count number
 
     # Quit
-        # stop 
-        # end program and loop
+    else:
+        print("Goodbye, thanks for visiting the Book Nook!")
+        break
