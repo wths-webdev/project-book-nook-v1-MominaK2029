@@ -10,18 +10,34 @@ print("To remove (remove)")
 print("To count (count)")
 print("To quit (quit)")
 # ask user for what they wanna do (While Loop)
-# Add
-    # ask for book 
-    # add to list 
-    # success/failure message
-# Show 
-    # print out list with numbers
-# Remove 
-    # ask for book
-    # remove the book
-    # success/failure message 
-# Count 
-    # print out the message with count number
-# Quit
-    # stop 
-    # end program and loop
+user_input = input("What would you like to do?")
+while True:
+    input("What would you like to do?")
+
+    # Add
+        # ask for book 
+    if user_input == ("add"):
+        book_name = input("Which book would you like to add?")
+        input("Which book would you like to add?")
+        # add to list 
+        My_Books.append(book_name)
+        # success message
+        print("Book has been successfully added.")
+
+    # Show 
+        # print out list with numbers
+    elif user_input == ("show"):
+        print (My_Books)
+    # Remove 
+        # ask for book
+        # remove the book
+        My_Books.remove()
+        # success message
+        print("Book has been successfully removed.") 
+
+    # Count 
+        # print out the message with count number
+
+    # Quit
+        # stop 
+        # end program and loop
