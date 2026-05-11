@@ -16,7 +16,7 @@ print("To add (add)")
 print("To show (show)")
 print("To remove (remove)")
 print("To count (count)")
-print("To quit (quit)")
+print("To quit (q)")
 # ask user for what they wanna do (While Loop)
 
 while True:
