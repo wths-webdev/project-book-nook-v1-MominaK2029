@@ -5,10 +5,10 @@ print("Welcome to the book nook.")
     # image
 print("\nWelcome to...\n"
     "      ______ ______\n"
-    "    _/      Y      \\-\n"
-    "   // ~Book | ~~ ~  \\-\n"
-    "  // ~ ~ ~~ |  Nook~ \\-\n"
-    " //________.|.________\\-\n"
+    "    _/      Y      \\_\n"
+    "   // ~Book | ~~ ~  \\\n"
+    "  // ~ ~ ~~ |  Nook~ \\\n"
+    " //________.|.________\\\n"
     "`----------`-'----------'\n"
 '')
 # print out the commands
@@ -33,7 +33,8 @@ while True:
     # Show 
         # print out list with numbers
     elif user_input == "show":
-        print (My_Books)
+        for count, item in enumerate (My_Books, start=1):
+            print(f"{count}. {item}")
     # Remove 
     elif user_input == "remove":
         # ask for book
@@ -42,12 +43,11 @@ while True:
         My_Books.remove(book_name2)
         # success message
         print("Book has been successfully removed.") 
-
     # Count 
     elif user_input == "count":
         # print out the message with count number
-        print(len(My_Books))
-
+        print(len(My_Books)) 
+        print("book(s)")
     # Quit
     else:
         print("Goodbye, thanks for visiting the Book Nook!")
