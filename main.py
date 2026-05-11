@@ -3,6 +3,14 @@ My_Books = []
 # print Welcome message and image 
 print("Welcome to the book nook.")
     # image
+print("\nWelcome to...\n"
+    "      ______ ______\n"
+    "    _/      Y      \\-\n"
+    "   // ~Book | ~~ ~  \\-\n"
+    "  // ~ ~ ~~ |  Nook~ \\-\n"
+    " //________.|.________\\-\n"
+    "`----------`-'----------'\n"
+'')
 # print out the commands
 print("To add (add)")
 print("To show (show)")
@@ -10,9 +18,9 @@ print("To remove (remove)")
 print("To count (count)")
 print("To quit (quit)")
 # ask user for what they wanna do (While Loop)
-user_input = input("What would you like to do?")
-while True:
 
+while True:
+    user_input = input("What would you like to do?")    
     # Add
         # ask for book 
     if user_input == "add":
@@ -27,15 +35,18 @@ while True:
     elif user_input == "show":
         print (My_Books)
     # Remove 
+    elif user_input == "remove":
         # ask for book
-        book_name2 = input("Which book would you like to add?")
+        book_name2 = input("Which book would you like to remove?")
         # remove the book
-        My_Books.remove()
+        My_Books.remove(book_name2)
         # success message
         print("Book has been successfully removed.") 
 
     # Count 
+    elif user_input == "count":
         # print out the message with count number
+        print(len(My_Books))
 
     # Quit
     else:
