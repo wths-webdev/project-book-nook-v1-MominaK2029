@@ -23,7 +23,7 @@ while True:
     user_input = input("What would you like to do?")    
     # Add
         # ask for book 
-    if user_input == "add":
+    if user_input.lower() == "add":
         book_name = input("Which book would you like to add?")
         # add to list 
         My_Books.append(book_name)
@@ -32,11 +32,11 @@ while True:
 
     # Show 
         # print out list with numbers
-    elif user_input == "show":
+    elif user_input.lower() == "show":
         for count, item in enumerate (My_Books, start=1):
             print(f"{count}. {item}")
     # Remove 
-    elif user_input == "remove":
+    elif user_input.lower() == "remove":
         # ask for book
         book_name2 = input("Which book would you like to remove?")
         # remove the book
@@ -44,7 +44,7 @@ while True:
         # success message
         print("Book has been successfully removed.") 
     # Count 
-    elif user_input == "count":
+    elif user_input.lower() == "count":
         # print out the message with count number
         print(len(My_Books)) 
         print("book(s)")
