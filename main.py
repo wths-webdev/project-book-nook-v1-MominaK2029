@@ -26,7 +26,7 @@ while True:
     if user_input.lower() == "add":
         book_name = input("Which book would you like to add?")
         # add to list 
-        My_Books.append(book_name)
+        My_Books.append(book_name.isalpha())
         # success message
         print("Book has been successfully added.")
 
@@ -40,7 +40,7 @@ while True:
         # ask for book
         book_name2 = input("Which book would you like to remove?")
         # remove the book
-        My_Books.remove(book_name2)
+        My_Books.remove(book_name2.isalpha())
         # success message
         print("Book has been successfully removed.") 
     # Count 
@@ -50,5 +50,6 @@ while True:
         print("book(s)")
     # Quit
     else:
+        user_input.lower() == ("quit")
         print("Goodbye, thanks for visiting the Book Nook!")
         break
